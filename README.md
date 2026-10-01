@@ -1,5 +1,9 @@
 # Terminal Burn atmosphere simulation
 
+## New crust-up revision
+
+The independent [revision 2 model](revision2/README.md) adds conserved elemental equilibrium, finite reactive crust, carbonate and sulfide reservoirs, ocean-gated tectonics, and scheduled geological events. See its [validation report](revision2/VALIDATION.md) and [example input](revision2/example.json). The launcher described below remains the original prototype.
+
 Run the existing `atmo-sim.py` library through `run_planets.py`. Python 3.9+ and
 Matplotlib are required for the per-planet plots. Install the dependency with
 `python3 -m pip install -r requirements.txt`. The simulator and its physics are

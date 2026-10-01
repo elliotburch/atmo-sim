@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "planet": {
+    "name": "Crust-up event demonstration",
+    "epochs": 8,
+    "epoch_duration_myr": 10,
+    "stellar_flux_w_m2": 1800,
+    "crust": {
+      "felsic": 0.2,
+      "mafic": 0.65,
+      "ultramafic": 0.15,
+      "feo_mol_m2": 1000,
+      "cao_mol_m2": 1000,
+      "fes_mol_m2": 100
+    }
+  },
+  "events": [
+    {"time_myr": 15, "kind": "volcanic_rate", "label": "Volcanic episode begins", "volcanic_multiplier": 8},
+    {"time_myr": 25, "kind": "comet", "label": "Water and volatile delivery", "elements": {"H": 200000, "O": 100100, "C": 50, "N": 1000, "S": 20}},
+    {"time_myr": 35, "kind": "volcanic_rate", "label": "Background volcanism resumes", "volcanic_multiplier": 1},
+    {"time_myr": 50, "kind": "impact", "label": "Atmosphere stripping and decompression outgassing", "strip_fraction": 0.4, "mantle_release_fraction": 0.02, "resurface_fraction": 0.2},
+    {"time_myr": 70, "kind": "resurfacing", "label": "Fresh crust exposed", "resurface_fraction": 0.1}
+  ]
+}
