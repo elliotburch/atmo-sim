@@ -1,0 +1,771 @@
+planet,reservoir,species,mass_kg_m2
+Earth,atm,N2,330.70378635107403
+Earth,atm,CO2,5502.10245419656
+Earth,atm,CO,355.1772153355934
+Earth,atm,CH4,30.33851795096942
+Earth,atm,Ar,25.14912917272667
+Earth,atm,H2,0.13737628465471566
+Earth,atm,He,0.0
+Earth,atm,H2O,267.978454864672
+Earth,upper_atm,N2,7.580589515137922
+Earth,upper_atm,CO2,126.12247545064008
+Earth,upper_atm,CO,8.141584057131368
+Earth,upper_atm,CH4,0.6954376108648247
+Earth,upper_atm,Ar,0.5764833448844541
+Earth,upper_atm,H2,0.012206298414546533
+Earth,upper_atm,He,0.0
+Earth,upper_atm,H2O,0.00040577128394105294
+Earth,frost,N2,0.0
+Earth,frost,CO2,0.0
+Earth,frost,CO,0.0
+Earth,frost,CH4,0.0
+Earth,frost,Ar,0.0
+Earth,frost,H2,0.0
+Earth,frost,He,0.0
+Earth,frost,H2O,0.0
+Earth,clath,N2,0.0
+Earth,clath,CO2,0.0
+Earth,clath,CO,0.0
+Earth,clath,CH4,0.0
+Earth,clath,Ar,0.0
+Earth,clath,H2,0.0
+Earth,clath,He,0.0
+Earth,clath,H2O,0.0
+Earth,crust_vol,N2,191724.38127469452
+Earth,crust_vol,CO2,3353744.5927655986
+Earth,crust_vol,CO,291275.98962538777
+Earth,crust_vol,CH4,16874.4154787242
+Earth,crust_vol,Ar,0.0
+Earth,crust_vol,H2,0.0
+Earth,crust_vol,He,0.0
+Earth,crust_vol,H2O,2204830.3846589844
+Earth,escaped_kg_m2,N2,42103.81050644676
+Earth,escaped_kg_m2,CO2,372798.68667267857
+Earth,escaped_kg_m2,CO,32377.950796842622
+Earth,escaped_kg_m2,CH4,1875.744341994652
+Earth,escaped_kg_m2,Ar,23390.922003183136
+Earth,escaped_kg_m2,H2,757848.3152641036
+Earth,escaped_kg_m2,He,0.0
+Earth,escaped_kg_m2,H2O,65238.09289823728
+Earth,water_ice,H2O,0.0
+Earth,ocean,H2O,422578.01938772574
+Earth,hp_ice,H2O,0.0
+Earth,supercrit,H2O,0.0
+Earth,methane_liquid,CH4,0.0
+Earth,organics,mixed,1.823860203397729
+Earth,refractory_carbon,C,0.0
+Mars,atm,N2,1281.9096976817066
+Mars,atm,CO2,36722.988517938145
+Mars,atm,CO,3081.4836194096433
+Mars,atm,CH4,147.81084130185886
+Mars,atm,Ar,2821.7430480289777
+Mars,atm,H2,6.160805214153571
+Mars,atm,He,0.0
+Mars,atm,H2O,0.06310953928393295
+Mars,upper_atm,N2,25.280563067780044
+Mars,upper_atm,CO2,724.2146845008191
+Mars,upper_atm,CO,60.769991149688046
+Mars,upper_atm,CH4,2.9149801287805595
+Mars,upper_atm,Ar,55.647642900099754
+Mars,upper_atm,H2,0.4735245980463583
+Mars,upper_atm,He,0.0
+Mars,upper_atm,H2O,4.500530311059951e-11
+Mars,frost,N2,0.0
+Mars,frost,CO2,0.0
+Mars,frost,CO,0.0
+Mars,frost,CH4,0.0
+Mars,frost,Ar,0.0
+Mars,frost,H2,0.0
+Mars,frost,He,0.0
+Mars,frost,H2O,0.0
+Mars,clath,N2,0.0
+Mars,clath,CO2,0.0
+Mars,clath,CO,0.0
+Mars,clath,CH4,0.0
+Mars,clath,Ar,0.0
+Mars,clath,H2,0.0
+Mars,clath,He,0.0
+Mars,clath,H2O,0.0
+Mars,crust_vol,N2,18136.020052847838
+Mars,crust_vol,CO2,1011015.6030786356
+Mars,crust_vol,CO,90413.34110259115
+Mars,crust_vol,CH4,5341.470580666479
+Mars,crust_vol,Ar,0.0
+Mars,crust_vol,H2,0.0
+Mars,crust_vol,He,0.0
+Mars,crust_vol,H2O,181360.2005284784
+Mars,escaped_kg_m2,N2,2689.023126676093
+Mars,escaped_kg_m2,CO2,75877.21987225504
+Mars,escaped_kg_m2,CO,6785.185950117026
+Mars,escaped_kg_m2,CH4,401.15852738178285
+Mars,escaped_kg_m2,Ar,5975.502685180293
+Mars,escaped_kg_m2,H2,302002.5976454281
+Mars,escaped_kg_m2,He,0.0
+Mars,escaped_kg_m2,H2O,6.049806583877525
+Mars,water_ice,H2O,39956.02095813276
+Mars,ocean,H2O,0.0
+Mars,hp_ice,H2O,0.0
+Mars,supercrit,H2O,0.0
+Mars,methane_liquid,CH4,0.0
+Mars,organics,mixed,12.31830818339979
+Mars,refractory_carbon,C,0.0
+Venus,atm,N2,1399.3704933963731
+Venus,atm,CO2,195968.24695661973
+Venus,atm,CO,3963.568092546769
+Venus,atm,CH4,691.6810215595646
+Venus,atm,Ar,97.9129027402281
+Venus,atm,H2,4.468007623732689
+Venus,atm,He,0.0
+Venus,atm,H2O,44141.533152619195
+Venus,upper_atm,N2,37.24277148931573
+Venus,upper_atm,CO2,5215.488446418101
+Venus,upper_atm,CO,105.48618928986554
+Venus,upper_atm,CH4,18.40836172479074
+Venus,upper_atm,Ar,2.6058487582937926
+Venus,upper_atm,H2,0.45783178079441483
+Venus,upper_atm,He,0.0
+Venus,upper_atm,H2O,10.024233616122002
+Venus,frost,N2,0.0
+Venus,frost,CO2,0.0
+Venus,frost,CO,0.0
+Venus,frost,CH4,0.0
+Venus,frost,Ar,0.0
+Venus,frost,H2,0.0
+Venus,frost,He,0.0
+Venus,frost,H2O,0.0
+Venus,clath,N2,0.0
+Venus,clath,CO2,0.0
+Venus,clath,CO,0.0
+Venus,clath,CH4,0.0
+Venus,clath,Ar,0.0
+Venus,clath,H2,0.0
+Venus,clath,He,0.0
+Venus,clath,H2O,0.0
+Venus,crust_vol,N2,172507.10662307154
+Venus,crust_vol,CO2,24216879.37221785
+Venus,crust_vol,CO,2055415.4704444015
+Venus,crust_vol,CH4,117315.89355584266
+Venus,crust_vol,Ar,0.0
+Venus,crust_vol,H2,0.0
+Venus,crust_vol,He,0.0
+Venus,crust_vol,H2O,1725071.0662307134
+Venus,escaped_kg_m2,N2,37965.525236089
+Venus,escaped_kg_m2,CO2,2697940.770831041
+Venus,escaped_kg_m2,CO,228976.33743565445
+Venus,escaped_kg_m2,CH4,13069.9100363684
+Venus,escaped_kg_m2,Ar,21090.4057609061
+Venus,escaped_kg_m2,H2,658165.9493105875
+Venus,escaped_kg_m2,He,0.0
+Venus,escaped_kg_m2,H2O,36436.85962471396
+Venus,water_ice,H2O,0.0
+Venus,ocean,H2O,313432.96799879824
+Venus,hp_ice,H2O,0.0
+Venus,supercrit,H2O,0.0
+Venus,methane_liquid,CH4,0.0
+Venus,organics,mixed,137.48442549540295
+Venus,refractory_carbon,C,0.0
+Moon,atm,N2,2.610865025884223
+Moon,atm,CO2,50.41074114300342
+Moon,atm,CO,3.4316700617173113
+Moon,atm,CH4,0.10780635838245256
+Moon,atm,Ar,287.35682879654473
+Moon,atm,H2,0.0006877431195963672
+Moon,atm,He,0.0
+Moon,atm,H2O,10.214145781910425
+Moon,upper_atm,N2,0.05505789799327697
+Moon,upper_atm,CO2,1.0630612521522398
+Moon,upper_atm,CO,0.07236702714673102
+Moon,upper_atm,CH4,0.00227341950809484
+Moon,upper_atm,Ar,6.059778200212978
+Moon,upper_atm,H2,5.639549545166864e-05
+Moon,upper_atm,He,0.0
+Moon,upper_atm,H2O,0.030508074352512914
+Moon,frost,N2,0.0
+Moon,frost,CO2,0.0
+Moon,frost,CO,0.0
+Moon,frost,CH4,0.0
+Moon,frost,Ar,0.0
+Moon,frost,H2,0.0
+Moon,frost,He,0.0
+Moon,frost,H2O,0.0
+Moon,clath,N2,0.0
+Moon,clath,CO2,0.0
+Moon,clath,CO,0.0
+Moon,clath,CH4,0.0
+Moon,clath,Ar,0.0
+Moon,clath,H2,0.0
+Moon,clath,He,0.0
+Moon,clath,H2O,0.0
+Moon,crust_vol,N2,158.6888107456536
+Moon,crust_vol,CO2,5551.737733430194
+Moon,crust_vol,CO,482.17383814310864
+Moon,crust_vol,CH4,27.93365044699438
+Moon,crust_vol,Ar,0.0
+Moon,crust_vol,H2,0.0
+Moon,crust_vol,He,0.0
+Moon,crust_vol,H2O,1586.888107456535
+Moon,escaped_kg_m2,N2,32.30064350516915
+Moon,escaped_kg_m2,CO2,570.4894063843861
+Moon,escaped_kg_m2,CO,49.65531349901731
+Moon,escaped_kg_m2,CH4,2.8780920720570706
+Moon,escaped_kg_m2,Ar,3579.6909364972475
+Moon,escaped_kg_m2,H2,125347.83860454173
+Moon,escaped_kg_m2,He,0.0
+Moon,escaped_kg_m2,H2O,110.6529475000573
+Moon,water_ice,H2O,228.76806293414535
+Moon,ocean,H2O,0.0
+Moon,hp_ice,H2O,0.0
+Moon,supercrit,H2O,0.0
+Moon,methane_liquid,CH4,0.0
+Moon,organics,mixed,0.036980169867030656
+Moon,refractory_carbon,C,0.0
+Titan,atm,N2,44704.53855111599
+Titan,atm,CO2,4.5763185227345987e-07
+Titan,atm,CO,1509.0038181478049
+Titan,atm,CH4,711.8099128876437
+Titan,atm,Ar,20.564640311610514
+Titan,atm,H2,0.02807320935626393
+Titan,atm,He,0.0
+Titan,atm,H2O,0.0
+Titan,upper_atm,N2,570.6930386577837
+Titan,upper_atm,CO2,5.842076013421037e-09
+Titan,upper_atm,CO,19.263770575336142
+Titan,upper_atm,CH4,9.086884135222572
+Titan,upper_atm,Ar,0.2625258519315234
+Titan,upper_atm,H2,0.001411675363350294
+Titan,upper_atm,He,0.0
+Titan,upper_atm,H2O,0.0
+Titan,frost,N2,112354.10207666956
+Titan,frost,CO2,329204.4970977119
+Titan,frost,CO,70039.92141288827
+Titan,frost,CH4,308776.3491993146
+Titan,frost,Ar,0.0
+Titan,frost,H2,0.0
+Titan,frost,He,0.0
+Titan,frost,H2O,0.0
+Titan,clath,N2,0.0
+Titan,clath,CO2,3231126.7507405384
+Titan,clath,CO,477901.4723666641
+Titan,clath,CH4,52853.62540300244
+Titan,clath,Ar,0.0
+Titan,clath,H2,0.0
+Titan,clath,He,0.0
+Titan,clath,H2O,0.0
+Titan,crust_vol,N2,560059.2091927235
+Titan,crust_vol,CO2,14202155.148778604
+Titan,crust_vol,CO,2440821.0053965873
+Titan,crust_vol,CH4,244507.3306799715
+Titan,crust_vol,Ar,0.0
+Titan,crust_vol,H2,0.0
+Titan,crust_vol,He,0.0
+Titan,crust_vol,H2O,34848128.571991704
+Titan,escaped_kg_m2,N2,89331.8646886021
+Titan,escaped_kg_m2,CO2,0.4775615842824885
+Titan,escaped_kg_m2,CO,4157.511594461957
+Titan,escaped_kg_m2,CH4,1957.1852704776775
+Titan,escaped_kg_m2,Ar,3207.2544640275337
+Titan,escaped_kg_m2,H2,350045.236375537
+Titan,escaped_kg_m2,He,0.0
+Titan,escaped_kg_m2,H2O,0.0
+Titan,water_ice,H2O,12258843.844347494
+Titan,ocean,H2O,82016292.79130395
+Titan,hp_ice,H2O,0.0
+Titan,supercrit,H2O,0.0
+Titan,methane_liquid,CH4,0.0
+Titan,organics,mixed,787.3669454595389
+Titan,refractory_carbon,C,0.0
+Triton,atm,N2,240.27823774541085
+Triton,atm,CO2,5.369605129279323e-13
+Triton,atm,CO,1.0689644467719657
+Triton,atm,CH4,0.2618867408567726
+Triton,atm,Ar,31.78402740259079
+Triton,atm,H2,4.6148143706319035e-07
+Triton,atm,He,0.0
+Triton,atm,H2O,0.0
+Triton,upper_atm,N2,2.7580902903027606
+Triton,upper_atm,CO2,6.16362759640227e-15
+Triton,upper_atm,CO,0.012270359933488946
+Triton,upper_atm,CH4,0.0030061285778257927
+Triton,upper_atm,Ar,0.3648404374377297
+Triton,upper_atm,H2,2.090330985979359e-08
+Triton,upper_atm,He,0.0
+Triton,upper_atm,H2O,0.0
+Triton,frost,N2,275191.67312146584
+Triton,frost,CO2,113896.07007034427
+Triton,frost,CO,3228.9994077309334
+Triton,frost,CH4,106720.50041091007
+Triton,frost,Ar,1806.9043973721145
+Triton,frost,H2,0.0
+Triton,frost,He,0.0
+Triton,frost,H2O,0.0
+Triton,clath,N2,0.0
+Triton,clath,CO2,1867037.2431963885
+Triton,clath,CO,317962.2021667072
+Triton,clath,CH4,32014.60925017936
+Triton,clath,Ar,0.0
+Triton,clath,H2,0.0
+Triton,clath,He,0.0
+Triton,clath,H2O,0.0
+Triton,crust_vol,N2,656989.8721009034
+Triton,crust_vol,CO2,8330076.482629919
+Triton,crust_vol,CO,1431629.5972243198
+Triton,crust_vol,CH4,143412.37254424795
+Triton,crust_vol,Ar,0.0
+Triton,crust_vol,H2,0.0
+Triton,crust_vol,He,0.0
+Triton,crust_vol,H2O,63874015.343143314
+Triton,escaped_kg_m2,N2,198.22087270932093
+Triton,escaped_kg_m2,CO2,0.0754198356789478
+Triton,escaped_kg_m2,CO,1.294100102183086
+Triton,escaped_kg_m2,CH4,1.5466199554638744
+Triton,escaped_kg_m2,Ar,26.192339634080817
+Triton,escaped_kg_m2,H2,202262.57029448551
+Triton,escaped_kg_m2,He,0.0
+Triton,escaped_kg_m2,H2O,0.0
+Triton,water_ice,H2O,13993199.999999998
+Triton,ocean,H2O,155288485.26263446
+Triton,hp_ice,H2O,0.0
+Triton,supercrit,H2O,0.0
+Triton,methane_liquid,CH4,0.0
+Triton,organics,mixed,0.6007419716147928
+Triton,refractory_carbon,C,0.0
+Super Titan,atm,N2,20807.135649001215
+Super Titan,atm,CO2,5.688519828782548e-06
+Super Titan,atm,CO,1075.302964214196
+Super Titan,atm,CH4,512.2365170183206
+Super Titan,atm,Ar,1752.7315122319376
+Super Titan,atm,H2,167224.43342517276
+Super Titan,atm,He,0.0
+Super Titan,atm,H2O,0.0
+Super Titan,upper_atm,N2,292.86820411100933
+Super Titan,upper_atm,CO2,8.006804081105619e-08
+Super Titan,upper_atm,CO,15.135290763569058
+Super Titan,upper_atm,CH4,7.209920257641768
+Super Titan,upper_atm,Ar,24.670350543938596
+Super Titan,upper_atm,H2,9284.314549132809
+Super Titan,upper_atm,He,0.0
+Super Titan,upper_atm,H2O,0.0
+Super Titan,frost,N2,1470421.7510520245
+Super Titan,frost,CO2,4622994.623528123
+Super Titan,frost,CO,421708.85908859916
+Super Titan,frost,CH4,4392712.923175143
+Super Titan,frost,Ar,0.0
+Super Titan,frost,H2,0.0
+Super Titan,frost,He,0.0
+Super Titan,frost,H2O,0.0
+Super Titan,clath,N2,0.0
+Super Titan,clath,CO2,17723052.59395481
+Super Titan,clath,CO,2621337.2556621707
+Super Titan,clath,CH4,289907.4084865011
+Super Titan,clath,Ar,0.0
+Super Titan,clath,H2,0.0
+Super Titan,clath,He,0.0
+Super Titan,clath,H2O,0.0
+Super Titan,crust_vol,N2,2889216.0788589655
+Super Titan,crust_vol,CO2,73265637.51973009
+Super Titan,crust_vol,CO,12591631.703679068
+Super Titan,crust_vol,CH4,1261356.8344277793
+Super Titan,crust_vol,Ar,0.0
+Super Titan,crust_vol,H2,0.0
+Super Titan,crust_vol,He,0.0
+Super Titan,crust_vol,H2O,179773444.9067801
+Super Titan,escaped_kg_m2,N2,45849.61721902368
+Super Titan,escaped_kg_m2,CO2,0.8538055782069357
+Super Titan,escaped_kg_m2,CO,3425.0018344050422
+Super Titan,escaped_kg_m2,CH4,1700.6636998078957
+Super Titan,escaped_kg_m2,Ar,15928.947941156624
+Super Titan,escaped_kg_m2,H2,1743523.6715184597
+Super Titan,escaped_kg_m2,He,0.0
+Super Titan,escaped_kg_m2,H2O,0.0
+Super Titan,water_ice,H2O,11747728.740736704
+Super Titan,ocean,H2O,70875076.31016524
+Super Titan,hp_ice,H2O,445857742.199645
+Super Titan,supercrit,H2O,0.0
+Super Titan,methane_liquid,CH4,0.0
+Super Titan,organics,mixed,515.4618839861745
+Super Titan,refractory_carbon,C,0.0
+Cold Water World,atm,N2,141575.3569830257
+Cold Water World,atm,CO2,168278.1714635783
+Cold Water World,atm,CO,49643.56807936339
+Cold Water World,atm,CH4,162481.54473131482
+Cold Water World,atm,Ar,9130.450112346221
+Cold Water World,atm,H2,116122.7638673607
+Cold Water World,atm,He,0.0
+Cold Water World,atm,H2O,0.22324114021503197
+Cold Water World,upper_atm,N2,2849.2376325388836
+Cold Water World,upper_atm,CO2,3386.63810627964
+Cold Water World,upper_atm,CO,999.0885800993393
+Cold Water World,upper_atm,CH4,3269.9796186776894
+Cold Water World,upper_atm,Ar,183.75247371076594
+Cold Water World,upper_atm,H2,9158.708112176748
+Cold Water World,upper_atm,He,0.0
+Cold Water World,upper_atm,H2O,1.0085551360303209e-09
+Cold Water World,frost,N2,0.0
+Cold Water World,frost,CO2,275945.2470011887
+Cold Water World,frost,CO,0.0
+Cold Water World,frost,CH4,0.0
+Cold Water World,frost,Ar,0.0
+Cold Water World,frost,H2,0.0
+Cold Water World,frost,He,0.0
+Cold Water World,frost,H2O,0.0
+Cold Water World,clath,N2,0.0
+Cold Water World,clath,CO2,4137735.5495835156
+Cold Water World,clath,CO,326301.4305325626
+Cold Water World,clath,CH4,22212.020329076728
+Cold Water World,clath,Ar,0.0
+Cold Water World,clath,H2,0.0
+Cold Water World,clath,He,0.0
+Cold Water World,clath,H2O,0.0
+Cold Water World,crust_vol,N2,525487.7449056061
+Cold Water World,crust_vol,CO2,18832322.75812723
+Cold Water World,crust_vol,CO,1787436.8330418859
+Cold Water World,crust_vol,CH4,110118.87632133042
+Cold Water World,crust_vol,Ar,0.0
+Cold Water World,crust_vol,H2,0.0
+Cold Water World,crust_vol,He,0.0
+Cold Water World,crust_vol,H2O,613069035.7232074
+Cold Water World,escaped_kg_m2,N2,79420.3841812527
+Cold Water World,escaped_kg_m2,CO2,40327.43073438547
+Cold Water World,escaped_kg_m2,CO,28970.78299047731
+Cold Water World,escaped_kg_m2,CH4,1061.2512581280405
+Cold Water World,escaped_kg_m2,Ar,5672.451887991485
+Cold Water World,escaped_kg_m2,H2,446011.29255836573
+Cold Water World,escaped_kg_m2,He,0.0
+Cold Water World,escaped_kg_m2,H2O,0.7597305375654739
+Cold Water World,water_ice,H2O,2657944.2569850604
+Cold Water World,ocean,H2O,94958793.30168347
+Cold Water World,hp_ice,H2O,1537312396.8424268
+Cold Water World,supercrit,H2O,0.0
+Cold Water World,methane_liquid,CH4,0.0
+Cold Water World,organics,mixed,4895.713105446892
+Cold Water World,refractory_carbon,C,0.0
+Migrated Hot Water World,atm,N2,11077.88377712539
+Migrated Hot Water World,atm,CO2,323171.7363840086
+Migrated Hot Water World,atm,CO,5767.069574224721
+Migrated Hot Water World,atm,CH4,10581.43917174843
+Migrated Hot Water World,atm,Ar,133.6660039459882
+Migrated Hot Water World,atm,H2,231.20958393552647
+Migrated Hot Water World,atm,He,31.969545127377707
+Migrated Hot Water World,atm,H2O,1101088.9191209993
+Migrated Hot Water World,upper_atm,N2,347.25946965934025
+Migrated Hot Water World,upper_atm,CO2,10130.494961260569
+Migrated Hot Water World,upper_atm,CO,180.78087495096185
+Migrated Hot Water World,upper_atm,CH4,331.69737369888077
+Migrated Hot Water World,upper_atm,Ar,4.190040857588044
+Migrated Hot Water World,upper_atm,H2,27.645245414973065
+Migrated Hot Water World,upper_atm,He,2.4291026310683113
+Migrated Hot Water World,upper_atm,H2O,69.18319479871552
+Migrated Hot Water World,frost,N2,0.0
+Migrated Hot Water World,frost,CO2,0.0
+Migrated Hot Water World,frost,CO,0.0
+Migrated Hot Water World,frost,CH4,0.0
+Migrated Hot Water World,frost,Ar,0.0
+Migrated Hot Water World,frost,H2,0.0
+Migrated Hot Water World,frost,He,0.0
+Migrated Hot Water World,frost,H2O,0.0
+Migrated Hot Water World,clath,N2,0.0
+Migrated Hot Water World,clath,CO2,4137735.5495835156
+Migrated Hot Water World,clath,CO,326301.4305325626
+Migrated Hot Water World,clath,CH4,22212.020329076728
+Migrated Hot Water World,clath,Ar,0.0
+Migrated Hot Water World,clath,H2,0.0
+Migrated Hot Water World,clath,He,0.0
+Migrated Hot Water World,clath,H2O,0.0
+Migrated Hot Water World,crust_vol,N2,529811.1705123486
+Migrated Hot Water World,crust_vol,CO2,18987264.80432387
+Migrated Hot Water World,crust_vol,CO,1802142.8851797841
+Migrated Hot Water World,crust_vol,CH4,111024.87417625441
+Migrated Hot Water World,crust_vol,Ar,0.0
+Migrated Hot Water World,crust_vol,H2,0.0
+Migrated Hot Water World,crust_vol,He,0.0
+Migrated Hot Water World,crust_vol,H2O,618113032.2644075
+Migrated Hot Water World,escaped_kg_m2,N2,208096.40994329005
+Migrated Hot Water World,escaped_kg_m2,CO2,112212.94505523257
+Migrated Hot Water World,escaped_kg_m2,CO,76003.92335901479
+Migrated Hot Water World,escaped_kg_m2,CH4,3840.694097893943
+Migrated Hot Water World,escaped_kg_m2,Ar,14848.798429244885
+Migrated Hot Water World,escaped_kg_m2,H2,591160.2904454641
+Migrated Hot Water World,escaped_kg_m2,He,4030.6143058094203
+Migrated Hot Water World,escaped_kg_m2,H2O,563263.8700149257
+Migrated Hot Water World,water_ice,H2O,0.0
+Migrated Hot Water World,ocean,H2O,3672276.403608442
+Migrated Hot Water World,hp_ice,H2O,0.0
+Migrated Hot Water World,supercrit,H2O,1624548440.466928
+Migrated Hot Water World,methane_liquid,CH4,0.0
+Migrated Hot Water World,organics,mixed,26484.538627459748
+Migrated Hot Water World,refractory_carbon,C,0.0
+Partial Melt World,atm,N2,8.039652038099199
+Partial Melt World,atm,CO2,269.1306632429106
+Partial Melt World,atm,CO,0.9065568164874341
+Partial Melt World,atm,CH4,0.4954616188410412
+Partial Melt World,atm,Ar,220.25739396959443
+Partial Melt World,atm,H2,0.015581332445223944
+Partial Melt World,atm,He,0.0
+Partial Melt World,atm,H2O,0.0
+Partial Melt World,upper_atm,N2,0.2915950468780222
+Partial Melt World,upper_atm,CO2,9.761264292625274
+Partial Melt World,upper_atm,CO,0.032880462506153826
+Partial Melt World,upper_atm,CH4,0.017970199865313067
+Partial Melt World,upper_atm,Ar,7.98864985890356
+Partial Melt World,upper_atm,H2,0.0021327906529068166
+Partial Melt World,upper_atm,He,0.0
+Partial Melt World,upper_atm,H2O,1.0574594250911673e-05
+Partial Melt World,frost,N2,0.0
+Partial Melt World,frost,CO2,0.0
+Partial Melt World,frost,CO,0.0
+Partial Melt World,frost,CH4,0.0
+Partial Melt World,frost,Ar,0.0
+Partial Melt World,frost,H2,0.0
+Partial Melt World,frost,He,0.0
+Partial Melt World,frost,H2O,0.0
+Partial Melt World,clath,N2,0.0
+Partial Melt World,clath,CO2,0.0
+Partial Melt World,clath,CO,0.0
+Partial Melt World,clath,CH4,0.0
+Partial Melt World,clath,Ar,0.0
+Partial Melt World,clath,H2,0.0
+Partial Melt World,clath,He,0.0
+Partial Melt World,clath,H2O,0.0
+Partial Melt World,crust_vol,N2,936.5653856942226
+Partial Melt World,crust_vol,CO2,33081.077729109566
+Partial Melt World,crust_vol,CO,2674.3510373207578
+Partial Melt World,crust_vol,CH4,148.15150925836815
+Partial Melt World,crust_vol,Ar,0.0
+Partial Melt World,crust_vol,H2,0.0
+Partial Melt World,crust_vol,He,0.0
+Partial Melt World,crust_vol,H2O,9365.653856942228
+Partial Melt World,escaped_kg_m2,N2,225.93574800583696
+Partial Melt World,escaped_kg_m2,CO2,4471.637368295335
+Partial Melt World,escaped_kg_m2,CO,221.26206577728485
+Partial Melt World,escaped_kg_m2,CH4,16.547541215635373
+Partial Melt World,escaped_kg_m2,Ar,23188.40157187223
+Partial Melt World,escaped_kg_m2,H2,667009.0491748714
+Partial Melt World,escaped_kg_m2,He,0.0
+Partial Melt World,escaped_kg_m2,H2O,2342.669940333549
+Partial Melt World,water_ice,H2O,0.0
+Partial Melt World,ocean,H2O,0.0
+Partial Melt World,hp_ice,H2O,0.0
+Partial Melt World,supercrit,H2O,0.0
+Partial Melt World,methane_liquid,CH4,0.0
+Partial Melt World,organics,mixed,1.2052288662956623
+Partial Melt World,refractory_carbon,C,0.0
+Molten World,atm,N2,47.67195299652704
+Molten World,atm,CO2,1817.5152470744563
+Molten World,atm,CO,4.221361061965411
+Molten World,atm,CH4,4.198620847333732
+Molten World,atm,Ar,1.2164294302997825
+Molten World,atm,H2,0.11797154183906852
+Molten World,atm,He,0.0
+Molten World,atm,H2O,0.0
+Molten World,upper_atm,N2,1.7290518802630648
+Molten World,upper_atm,CO2,65.92090228797251
+Molten World,upper_atm,CO,0.15310789306224393
+Molten World,upper_atm,CH4,0.15228311017849352
+Molten World,upper_atm,Ar,0.04411964397221975
+Molten World,upper_atm,H2,0.01614816927410209
+Molten World,upper_atm,He,0.0
+Molten World,upper_atm,H2O,9.751793574608314e-05
+Molten World,frost,N2,0.0
+Molten World,frost,CO2,0.0
+Molten World,frost,CO,0.0
+Molten World,frost,CH4,0.0
+Molten World,frost,Ar,0.0
+Molten World,frost,H2,0.0
+Molten World,frost,He,0.0
+Molten World,frost,H2O,0.0
+Molten World,clath,N2,0.0
+Molten World,clath,CO2,0.0
+Molten World,clath,CO,0.0
+Molten World,clath,CH4,0.0
+Molten World,clath,Ar,0.0
+Molten World,clath,H2,0.0
+Molten World,clath,He,0.0
+Molten World,clath,H2O,0.0
+Molten World,crust_vol,N2,544.5127046927225
+Molten World,crust_vol,CO2,19233.112160210323
+Molten World,crust_vol,CO,1554.84938785123
+Molten World,crust_vol,CH4,86.13427342372522
+Molten World,crust_vol,Ar,0.0
+Molten World,crust_vol,H2,0.0
+Molten World,crust_vol,He,0.0
+Molten World,crust_vol,H2O,5445.1270469272185
+Molten World,escaped_kg_m2,N2,576.9186712155242
+Molten World,escaped_kg_m2,CO2,17699.326659318845
+Molten World,escaped_kg_m2,CO,357.23762458587277
+Molten World,escaped_kg_m2,CH4,61.6084357899976
+Molten World,escaped_kg_m2,Ar,23415.38706662647
+Molten World,escaped_kg_m2,H2,667012.605042038
+Molten World,escaped_kg_m2,He,0.0
+Molten World,escaped_kg_m2,H2O,6263.196663405213
+Molten World,water_ice,H2O,0.0
+Molten World,ocean,H2O,0.0
+Molten World,hp_ice,H2O,0.0
+Molten World,supercrit,H2O,0.0
+Molten World,methane_liquid,CH4,0.0
+Molten World,organics,mixed,10.147213021523992
+Molten World,refractory_carbon,C,0.0
+Locked Earth,atm,N2,209.84025420432795
+Locked Earth,atm,CO2,2956.8051574112246
+Locked Earth,atm,CO,270.30453272884273
+Locked Earth,atm,CH4,13.274202447492085
+Locked Earth,atm,Ar,45.11371349807503
+Locked Earth,atm,H2,0.15675206070573222
+Locked Earth,atm,He,0.0
+Locked Earth,atm,H2O,28.327188789336027
+Locked Earth,upper_atm,N2,4.154736635673841
+Locked Earth,upper_atm,CO2,58.543327440328675
+Locked Earth,upper_atm,CO,5.3519004214686055
+Locked Earth,upper_atm,CH4,0.26282285744967077
+Locked Earth,upper_atm,Ar,0.8932299427126791
+Locked Earth,upper_atm,H2,0.012094514996344239
+Locked Earth,upper_atm,He,0.0
+Locked Earth,upper_atm,H2O,2.8734847999743845e-06
+Locked Earth,frost,N2,0.0
+Locked Earth,frost,CO2,0.0
+Locked Earth,frost,CO,0.0
+Locked Earth,frost,CH4,0.0
+Locked Earth,frost,Ar,0.0
+Locked Earth,frost,H2,0.0
+Locked Earth,frost,He,0.0
+Locked Earth,frost,H2O,0.0
+Locked Earth,clath,N2,0.0
+Locked Earth,clath,CO2,0.0
+Locked Earth,clath,CO,0.0
+Locked Earth,clath,CH4,0.0
+Locked Earth,clath,Ar,0.0
+Locked Earth,clath,H2,0.0
+Locked Earth,clath,He,0.0
+Locked Earth,clath,H2O,0.0
+Locked Earth,crust_vol,N2,191885.19399765276
+Locked Earth,crust_vol,CO2,3356557.6142315357
+Locked Earth,crust_vol,CO,291520.30328394583
+Locked Earth,crust_vol,CH4,16888.56923779971
+Locked Earth,crust_vol,Ar,0.0
+Locked Earth,crust_vol,H2,0.0
+Locked Earth,crust_vol,He,0.0
+Locked Earth,crust_vol,H2O,2206679.730973006
+Locked Earth,escaped_kg_m2,N2,42067.28716851468
+Locked Earth,escaped_kg_m2,CO2,372475.1528813886
+Locked Earth,escaped_kg_m2,CO,32349.853586783433
+Locked Earth,escaped_kg_m2,CH4,1874.115361048639
+Locked Earth,escaped_kg_m2,Ar,23370.640672259953
+Locked Earth,escaped_kg_m2,H2,757848.2205005498
+Locked Earth,escaped_kg_m2,He,0.0
+Locked Earth,escaped_kg_m2,H2O,4343.968934125825
+Locked Earth,water_ice,H2O,481862.4487067902
+Locked Earth,ocean,H2O,0.0
+Locked Earth,hp_ice,H2O,0.0
+Locked Earth,supercrit,H2O,0.0
+Locked Earth,methane_liquid,CH4,0.0
+Locked Earth,organics,mixed,1.6307002226494318
+Locked Earth,refractory_carbon,C,0.0
+Locked Wet Earth,atm,N2,6865.48673835217
+Locked Wet Earth,atm,CO2,74980.1135003033
+Locked Wet Earth,atm,CO,1306.59199476407
+Locked Wet Earth,atm,CH4,230.24658360564632
+Locked Wet Earth,atm,Ar,3214.3070397756433
+Locked Wet Earth,atm,H2,2.9014032334130575
+Locked Wet Earth,atm,He,0.0
+Locked Wet Earth,atm,H2O,164.34148602775056
+Locked Wet Earth,upper_atm,N2,154.4084495003418
+Locked Wet Earth,upper_atm,CO2,1686.3426454917726
+Locked Wet Earth,upper_atm,CO,29.38594912929682
+Locked Wet Earth,upper_atm,CH4,5.178368167066292
+Locked Wet Earth,upper_atm,Ar,72.29147548377826
+Locked Wet Earth,upper_atm,H2,0.25312979952440606
+Locked Wet Earth,upper_atm,He,0.0
+Locked Wet Earth,upper_atm,H2O,0.0005226691906410797
+Locked Wet Earth,frost,N2,0.0
+Locked Wet Earth,frost,CO2,0.0
+Locked Wet Earth,frost,CO,0.0
+Locked Wet Earth,frost,CH4,0.0
+Locked Wet Earth,frost,Ar,0.0
+Locked Wet Earth,frost,H2,0.0
+Locked Wet Earth,frost,He,0.0
+Locked Wet Earth,frost,H2O,0.0
+Locked Wet Earth,clath,N2,0.0
+Locked Wet Earth,clath,CO2,0.0
+Locked Wet Earth,clath,CO,0.0
+Locked Wet Earth,clath,CH4,0.0
+Locked Wet Earth,clath,Ar,0.0
+Locked Wet Earth,clath,H2,0.0
+Locked Wet Earth,clath,He,0.0
+Locked Wet Earth,clath,H2O,0.0
+Locked Wet Earth,crust_vol,N2,190911.83810651972
+Locked Wet Earth,crust_vol,CO2,3339531.1565894773
+Locked Wet Earth,crust_vol,CO,290041.53882758174
+Locked Wet Earth,crust_vol,CH4,16802.90036456388
+Locked Wet Earth,crust_vol,Ar,0.0
+Locked Wet Earth,crust_vol,H2,0.0
+Locked Wet Earth,crust_vol,He,0.0
+Locked Wet Earth,crust_vol,H2O,9545591.905325986
+Locked Wet Earth,escaped_kg_m2,N2,36234.742862635285
+Locked Wet Earth,escaped_kg_m2,CO2,320841.47011324577
+Locked Wet Earth,escaped_kg_m2,CO,27860.56718940448
+Locked Wet Earth,escaped_kg_m2,CH4,1614.1232362013757
+Locked Wet Earth,escaped_kg_m2,Ar,20130.04910044131
+Locked Wet Earth,escaped_kg_m2,H2,757861.0786087865
+Locked Wet Earth,escaped_kg_m2,He,0.0
+Locked Wet Earth,escaped_kg_m2,H2O,6744.425540901669
+Locked Wet Earth,water_ice,H2O,0.0
+Locked Wet Earth,ocean,H2O,2155823.134974794
+Locked Wet Earth,hp_ice,H2O,0.0
+Locked Wet Earth,supercrit,H2O,0.0
+Locked Wet Earth,methane_liquid,CH4,0.0
+Locked Wet Earth,organics,mixed,42.16586409948181
+Locked Wet Earth,refractory_carbon,C,0.0
+Desert World,atm,N2,296.8843141776772
+Desert World,atm,CO2,645.7208141151484
+Desert World,atm,CO,41.16731138747
+Desert World,atm,CH4,1.4806049636504384
+Desert World,atm,Ar,2622.1166408384515
+Desert World,atm,H2,0.9833598312798941
+Desert World,atm,He,0.0
+Desert World,atm,H2O,0.0
+Desert World,upper_atm,N2,6.949299006865452
+Desert World,upper_atm,CO2,15.11466520106287
+Desert World,upper_atm,CO,0.963620987968575
+Desert World,upper_atm,CH4,0.03465715806493658
+Desert World,upper_atm,Ar,61.37701352978431
+Desert World,upper_atm,H2,0.08914625931868242
+Desert World,upper_atm,He,0.0
+Desert World,upper_atm,H2O,2.4268866120891186e-07
+Desert World,frost,N2,0.0
+Desert World,frost,CO2,0.0
+Desert World,frost,CO,0.0
+Desert World,frost,CH4,0.0
+Desert World,frost,Ar,0.0
+Desert World,frost,H2,0.0
+Desert World,frost,He,0.0
+Desert World,frost,H2O,0.0
+Desert World,clath,N2,0.0
+Desert World,clath,CO2,0.0
+Desert World,clath,CO,0.0
+Desert World,clath,CH4,0.0
+Desert World,clath,Ar,0.0
+Desert World,clath,H2,0.0
+Desert World,clath,He,0.0
+Desert World,clath,H2O,0.0
+Desert World,crust_vol,N2,9538.412253166485
+Desert World,crust_vol,CO2,33370.193508975986
+Desert World,crust_vol,CO,2898.233860528514
+Desert World,crust_vol,CH4,167.902621771068
+Desert World,crust_vol,Ar,0.0
+Desert World,crust_vol,H2,0.0
+Desert World,crust_vol,He,0.0
+Desert World,crust_vol,H2O,953.8412253166487
+Desert World,escaped_kg_m2,N2,1866.0779414993426
+Desert World,escaped_kg_m2,CO2,3304.73401880708
+Desert World,escaped_kg_m2,CO,286.99038701926605
+Desert World,escaped_kg_m2,CH4,16.623367311724977
+Desert World,escaped_kg_m2,Ar,20733.153961332504
+Desert World,escaped_kg_m2,H2,757846.8977057887
+Desert World,escaped_kg_m2,He,0.0
+Desert World,escaped_kg_m2,H2O,216.99115522569977
+Desert World,water_ice,H2O,0.0
+Desert World,ocean,H2O,0.0
+Desert World,hp_ice,H2O,0.0
+Desert World,supercrit,H2O,0.0
+Desert World,methane_liquid,CH4,0.0
+Desert World,organics,mixed,0.5583740333059025
+Desert World,refractory_carbon,C,0.0
