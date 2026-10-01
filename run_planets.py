@@ -237,7 +237,7 @@ def run(planets, sim, epochs, output):
     )}
     final_states = []
     for planet in planets:
-        print(f"Running {planet.name} ({epochs} epochs)...", flush=True)
+        print(f"\n\nRunning {planet.name} ({epochs} epochs)...", flush=True)
         state, bulk, redox, history = sim.evolve(planet, epochs=epochs)
         row = sim.result_row(planet, state, bulk, redox)
         final_states.append((planet, state, row["P_bar"]))

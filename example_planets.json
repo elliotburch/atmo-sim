@@ -65,6 +65,33 @@
       }
     },
     {
+      "name": "Tidal lock earth",
+      "mass_e": 1.0,
+      "radius_e": 1.0,
+      "flux": 1361,
+      "formation_flux": 1361,
+      "seed": 90000,
+      "water_fraction": 0.0008,
+      "carbon_fraction": null,
+      "nitrogen_fraction": null,
+      "sulfur_fraction": null,
+      "carbon_richness": 0.0,
+      "formation_redox": 0.35,
+      "albedo_rock": 0.26,
+      "tidally_locked": true,
+      "crust": {
+        "thickness_km": 35,
+        "mafic": 0.65,
+        "felsic": 0.20,
+        "ultramafic": 0.15,
+        "carbon_mass_fraction": 0.001,
+        "sulfide_fraction": 0.002,
+        "oxidation": 0.35,
+        "porosity": 0.05,
+        "geothermal_gradient_k_km": 15
+      }
+    },
+    {
       "name": "Venus",
       "mass_e": 0.815,
       "radius_e": 0.949,
@@ -227,11 +254,38 @@
       }
     },
     {
-      "name": "Steam world",
+      "name": "Oceania",
       "mass_e": 2.0,
       "radius_e": 1.25,
       "flux": 1500,
       "formation_flux": 250,
+      "seed": 200000000,
+      "water_fraction": 0.04,
+      "carbon_fraction": 0.001,
+      "nitrogen_fraction": 0.0001,
+      "sulfur_fraction": 0.002,
+      "carbon_richness": 0.02,
+      "formation_redox": -0.1,
+      "albedo_rock": 0.25,
+      "tidally_locked": false,
+      "crust": {
+        "thickness_km": 25,
+        "mafic": 0.45,
+        "felsic": 0.10,
+        "ultramafic": 0.45,
+        "carbon_mass_fraction": 0.003,
+        "sulfide_fraction": 0.004,
+        "oxidation": -0.1,
+        "porosity": 0.08,
+        "geothermal_gradient_k_km": 10
+      }
+    },
+    {
+      "name": "Steam world",
+      "mass_e": 2.0,
+      "radius_e": 1.25,
+      "flux": 5000,
+      "formation_flux": 500,
       "seed": 200000000,
       "water_fraction": 0.04,
       "carbon_fraction": 0.001,

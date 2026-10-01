@@ -1092,6 +1092,7 @@ def evolve(p,epochs=128):
     rng=random.Random(p.seed+991); phase=rng.random()
     dt=4.5/epochs
     history=[]
+    print('Evolving',p.name,'for',epochs,'epochs of',dt,'Gyr each')
 
     # Establish the primordial surface BEFORE impact erosion. This condenses water and
     # other volatiles into ocean/ice/frost/clathrate reservoirs and builds the layer cake.
@@ -1110,6 +1111,7 @@ def evolve(p,epochs=128):
     initial_mobile=sum(st.atm.values())+sum(st.upper_atm.values())+sum(st.frost.values())+sum(st.clath.values())+sum(st.crust_vol.values())+st.water_ice+st.ocean+st.hp_ice+st.supercrit+st.methane_liquid+sum(st.escaped_kg_m2.values())
     assert_finite_state(st,"initial")
     for e in range(epochs):
+        print(f"Age {e*dt:.3f} Gyr: T={st.T:.1f} K, P={total_atmosphere(st)*G*(p.mass_e*ME)/(p.radius_e*RE)**2/BAR:.3f} bar, albedo={st.albedo:.3f}, runaway={st.runaway}")
         age=(e+.5)*dt
         u=smooth(.15,1.2,age)
         flux=math.exp(math.log(max(p.formation_flux,1e-9))*(1-u)+math.log(max(p.flux,1e-9))*u)*luminosity(age)
