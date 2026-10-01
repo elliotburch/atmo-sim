@@ -128,7 +128,6 @@ def write_planet_plots(planet, state, sim, pressure_bar, output):
     figure, axis = plt.subplots(figsize=(9, 7))
     x_positions = list(range(len(columns)))
     maximum_height = 0.0
-    column_tops = []
 
     for x_position, column in zip(x_positions, columns):
         height = 0.0
@@ -174,29 +173,34 @@ def write_planet_plots(planet, state, sim, pressure_bar, output):
             height += upper_height
 
         maximum_height = max(maximum_height, height)
-        column_tops.append(height / 1000)
-
-    label_offset = max(0.25, maximum_height / 1000 * 0.004)
-    for x_position, column, top in zip(x_positions, columns, column_tops):
-        axis.text(
-            x_position, top + label_offset,
-            f"Surface {column.temperature_k - 273.15:.1f} C", ha="center", va="bottom",
-            fontsize=9,
-        )
 
     handles = [
         Patch(facecolor=color, label=material)
         for material, color in material_colors.items()
     ]
     handles.append(Patch(facecolor="#a7cce8", hatch="//", label="Upper atmosphere (schematic)"))
+    legend = None
     if handles:
-        axis.legend(handles=handles, loc="upper left", bbox_to_anchor=(1.02, 1))
+        legend = axis.legend(handles=handles, loc="upper left", bbox_to_anchor=(1.02, 1))
     axis.set_xticks(x_positions, [column.name for column in columns])
     axis.set_xlim(-0.55, max(0.55, len(columns) - 0.45))
     axis.set_ylabel("Height from crust base (km)")
     axis.set_title(f"{planet.name}: crust to atmosphere")
-    axis.set_ylim(0, max(1.0, maximum_height / 1000 + label_offset + 0.6))
+    axis.set_ylim(0, max(1.0, maximum_height / 1000 + 0.6))
     figure.subplots_adjust(left=0.10, right=0.76, bottom=0.10, top=0.90)
+    if legend:
+        figure.canvas.draw()
+        legend_bottom = legend.get_window_extent(figure.canvas.get_renderer())
+        legend_bottom = legend_bottom.transformed(figure.transFigure.inverted()).y0
+        temperature_lines = []
+        for column in columns:
+            name = "Midlat" if column.name.casefold() == "midlatitude" else column.name.title()
+            temperature_c = column.temperature_k - 273.15
+            temperature_lines.append(f"{name} T: {temperature_c:.1f} C")
+        figure.text(
+            0.78, legend_bottom - 0.035, "\n".join(temperature_lines),
+            ha="left", va="top", fontsize=9, linespacing=1.5,
+        )
     figure.savefig(output / "layer_cake.png", dpi=160, bbox_inches="tight")
     plt.close(figure)
 
