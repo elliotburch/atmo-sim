@@ -8,6 +8,7 @@ import importlib.util
 import json
 import math
 from pathlib import Path
+import re
 import sys
 
 HERE = Path(__file__).resolve().parent
@@ -106,14 +107,136 @@ def write_csv(path, rows):
         writer.writerows(rows)
 
 
+def planet_directory_name(name):
+    cleaned = re.sub(r"[^A-Za-z0-9._-]+", "_", name).strip("._")
+    return cleaned or "planet"
+
+
+def write_planet_plots(planet, state, sim, pressure_bar, output):
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    from matplotlib.patches import Patch
+
+    output.mkdir(parents=True, exist_ok=True)
+    layers = list(reversed(state.layers[1:]))
+    material_colors = {
+        layer.material.value: plt.get_cmap("tab10")(index % 10)
+        for index, layer in enumerate(layers)
+    }
+    columns = state.climate_columns
+    figure, axis = plt.subplots(figsize=(9, 7))
+    x_positions = list(range(len(columns)))
+    maximum_height = 0.0
+    column_tops = []
+
+    for x_position, column in zip(x_positions, columns):
+        height = 0.0
+        for layer in layers:
+            axis.bar(
+                x_position, layer.thickness_m / 1000, bottom=height / 1000,
+                width=0.72, color=material_colors[layer.material.value],
+                edgecolor="white", linewidth=0.35,
+            )
+            height += layer.thickness_m
+
+        surface_height = height
+        profile = column.vertical_profile
+        if profile:
+            altitudes = [level["z_m"] for level in profile]
+            final_step = altitudes[-1] - altitudes[-2] if len(altitudes) > 1 else 1000.0
+            for index, level in enumerate(profile):
+                if index + 1 < len(profile):
+                    thickness = max(0.0, altitudes[index + 1] - altitudes[index])
+                else:
+                    thickness = max(0.0, final_step)
+                shade = 0.38 + 0.5 * (index / max(1, len(profile) - 1))
+                axis.bar(
+                    x_position, thickness / 1000, bottom=height / 1000,
+                    width=0.72, color=plt.get_cmap("Blues")(shade),
+                    edgecolor="white", linewidth=0.2,
+                )
+                height += thickness
+
+        # The upper atmosphere has a representative bulk height, but no resolved profile.
+        representative_atmosphere = next(
+            (layer.thickness_m for layer in state.layers
+             if layer.material.value == "atmosphere"), 0.0,
+        )
+        profile_height = height - surface_height
+        upper_height = max(0.0, representative_atmosphere - profile_height)
+        if upper_height:
+            axis.bar(
+                x_position, upper_height / 1000, bottom=height / 1000,
+                width=0.72, color="#a7cce8", edgecolor="white", linewidth=0.35,
+                hatch="//",
+            )
+            height += upper_height
+
+        maximum_height = max(maximum_height, height)
+        column_tops.append(height / 1000)
+
+    label_offset = max(0.25, maximum_height / 1000 * 0.004)
+    for x_position, column, top in zip(x_positions, columns, column_tops):
+        axis.text(
+            x_position, top + label_offset,
+            f"Surface {column.temperature_k - 273.15:.1f} C", ha="center", va="bottom",
+            fontsize=9,
+        )
+
+    handles = [
+        Patch(facecolor=color, label=material)
+        for material, color in material_colors.items()
+    ]
+    handles.append(Patch(facecolor="#a7cce8", hatch="//", label="Upper atmosphere (schematic)"))
+    if handles:
+        axis.legend(handles=handles, loc="upper left", bbox_to_anchor=(1.02, 1))
+    axis.set_xticks(x_positions, [column.name for column in columns])
+    axis.set_xlim(-0.55, max(0.55, len(columns) - 0.45))
+    axis.set_ylabel("Height from crust base (km)")
+    axis.set_title(f"{planet.name}: crust to atmosphere")
+    axis.set_ylim(0, max(1.0, maximum_height / 1000 + label_offset + 0.6))
+    figure.subplots_adjust(left=0.10, right=0.76, bottom=0.10, top=0.90)
+    figure.savefig(output / "layer_cake.png", dpi=160, bbox_inches="tight")
+    plt.close(figure)
+
+    moles = {
+        species: (state.atm[species] + state.upper_atm[species]) / sim.MM[species]
+        for species in sim.SPECIES
+    }
+    total_moles = sum(moles.values())
+    present = [(species, amount) for species, amount in moles.items() if amount > 0]
+    figure, axis = plt.subplots(figsize=(8, 6))
+    if total_moles:
+        wedges, _ = axis.pie(
+            [amount for _, amount in present], startangle=90,
+            wedgeprops={"edgecolor": "white", "linewidth": 0.8},
+        )
+        legend_labels = [
+            f"{species}: {amount / total_moles * 1_000_000:,.1f} ppm"
+            for species, amount in present
+        ]
+        axis.legend(wedges, legend_labels, title="Atmospheric composition",
+                    loc="center left", bbox_to_anchor=(1, 0.5), frameon=False)
+    else:
+        axis.text(0.5, 0.5, "No atmospheric gases", ha="center", va="center")
+    axis.set_title(f"{planet.name}: atmosphere at {pressure_bar:.3g} bar surface pressure")
+    axis.set_aspect("equal")
+    figure.tight_layout()
+    figure.savefig(output / "atmosphere_composition.png", dpi=160, bbox_inches="tight")
+    plt.close(figure)
+
+
 def run(planets, sim, epochs, output):
     tables = {name: [] for name in (
         "summary", "history", "columns", "layers", "reservoirs", "vertical_profiles",
     )}
+    final_states = []
     for planet in planets:
         print(f"Running {planet.name} ({epochs} epochs)...", flush=True)
         state, bulk, redox, history = sim.evolve(planet, epochs=epochs)
         row = sim.result_row(planet, state, bulk, redox)
+        final_states.append((planet, state, row["P_bar"]))
         row.update({name: getattr(state, name) for name in (
             "formation_candidate_pressure_bar", "initial_target_pressure_bar",
             "formation_retained_fraction", "formation_impact_loss_kg_m2",
@@ -152,6 +275,18 @@ def run(planets, sim, epochs, output):
     output.mkdir(parents=True, exist_ok=True)
     for name, rows in tables.items():
         write_csv(output / f"{name}.csv", rows)
+    used_directories = set()
+    for planet, state, pressure_bar in final_states:
+        directory_name = planet_directory_name(planet.name)
+        unique_name = directory_name
+        suffix = 2
+        while unique_name.casefold() in used_directories:
+            unique_name = f"{directory_name}_{suffix}"
+            suffix += 1
+        used_directories.add(unique_name.casefold())
+        write_planet_plots(
+            planet, state, sim, pressure_bar, output / unique_name,
+        )
     print(f"Completed {len(planets)} planet(s). CSV files: {output.resolve()}")
 
 

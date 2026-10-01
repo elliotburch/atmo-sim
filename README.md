@@ -1,8 +1,9 @@
 # Terminal Burn atmosphere simulation
 
-Run the existing `atmo-sim.py` library through `run_planets.py`. Python 3.9+ is
-required; there are no third-party dependencies. The simulator and its physics
-are unchanged.
+Run the existing `atmo-sim.py` library through `run_planets.py`. Python 3.9+ and
+Matplotlib are required for the per-planet plots. Install the dependency with
+`python3 -m pip install -r requirements.txt`. The simulator and its physics are
+unchanged.
 
 ```sh
 python3 run_planets.py --help
@@ -76,6 +77,13 @@ units in their names. Redox/oxidation range from −1 to +1.
 | `layers.csv` | Final ordered material layers, pressures, temperatures, thickness and coupling |
 | `reservoirs.csv` | Final atmospheric, condensed, crustal and escaped inventories, kg/m² |
 | `vertical_profiles.csv` | Final regional altitude/pressure/temperature and condensable mole-fraction profiles |
+
+Each run also writes `layer_cake.png` and `atmosphere_composition.png` under a
+subdirectory named for each planet (for example, `results/Earth/`). The layer
+cake shows the crust and condensed shells beneath each column's resolved
+surface-to-tropopause profile; the hatched upper-atmosphere height is schematic.
+Surface temperatures are labeled for each column. Atmospheric pie slices are
+reported in ppm, with total surface pressure in the title.
 
 History ages are the library's epoch midpoint labels; history is neither a
 complete timestep log nor the final current-star solve. `summary.csv` describes

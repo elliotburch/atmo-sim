@@ -26,7 +26,7 @@ class LauncherTests(unittest.TestCase):
             with (Path(tmp) / "summary.csv").open() as stream:
                 rows = list(csv.DictReader(stream))
             self.assertEqual(len(rows), 1)
-            p = self.planets[0]
+            p = next(planet for planet in self.planets if planet.name.casefold() == "earth")
             state, bulk, redox, _ = self.sim.evolve(p, epochs=4)
             expected = self.sim.result_row(p, state, bulk, redox)
             for key, value in expected.items():
@@ -37,6 +37,9 @@ class LauncherTests(unittest.TestCase):
             for filename in ("history", "columns", "layers", "reservoirs", "vertical_profiles"):
                 with (Path(tmp) / f"{filename}.csv").open() as stream:
                     self.assertTrue(list(csv.DictReader(stream)), filename)
+            planet_output = Path(tmp) / launcher.planet_directory_name(p.name)
+            self.assertTrue((planet_output / "layer_cake.png").is_file())
+            self.assertTrue((planet_output / "atmosphere_composition.png").is_file())
 
     def test_invalid_cli_does_not_write_outputs(self):
         with tempfile.TemporaryDirectory() as tmp:
